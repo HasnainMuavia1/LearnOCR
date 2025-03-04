@@ -1,0 +1,27 @@
+<div id="visionView" class="center-content">
+    <div class="vision-options">
+        <form id="fileUploadForm" class="vision-card">
+            <input type="file" id="fileInput" name="file" accept="image/*" style="display: none;">
+            <i class="fas fa-file-upload"></i>
+            <h3>Choose File</h3>
+            <p>Upload an image from your device</p>
+        </form>
+
+        <div class="vision-card" id="takePicture">
+            <i class="fas fa-camera"></i>
+            <h3>Take Picture</h3>
+            <p>Use your camera to capture an image</p>
+        </div>
+    </div>
+
+    <form id="cameraForm" style="display: none;">
+        <video id="camera" style="display: none;"></video>
+        <canvas id="canvas" style="display: none;"></canvas>
+        <input type="hidden" name="image" id="imageData">
+    </form>
+
+    <div class="vision-result">
+        <img class="vision-image" id="resultImage">
+        <div class="vision-response"></div>
+    </div>
+</div>
